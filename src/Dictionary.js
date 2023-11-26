@@ -9,7 +9,7 @@ export default function Dictionary () {
         alert(`Searching for ${keyword} definition`);
     }
 
-    function handlekeywordChange(event) {
+    function handleKeywordChange(event) {
         setKeyword(event.target.value);
     }
     return <div className="Dictionary">
