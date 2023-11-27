@@ -11,7 +11,7 @@ export default function Result (props) {
                 <div key={index}>
                     <Meaning meaning={meaning} />
                 </div>
-            )
+            );
         })}
         </div>
     );
