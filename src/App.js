@@ -1,6 +1,5 @@
 import logo from "./shecodes logo2.png";
 import './App.css';
-import Dictionary from "./Dictionary.js";
 import React from "react";
 
 function App() {
