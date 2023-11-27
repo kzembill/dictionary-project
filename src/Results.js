@@ -1,7 +1,13 @@
 import React from "react";
 
 export default function Result () {
-    return (
-        <div classNmae="Results ">Hello, from results!</div>
-    )
+    if (props.results) {
+    return <div className="Results">
+        <h2>{props.results.word}</h2>
+        {props.results.meanings.map(function(meaning, index) {
+        })}
+        </div>;
+    } else {
+        return null;
+    }
 }
