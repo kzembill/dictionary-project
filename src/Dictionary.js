@@ -1,6 +1,6 @@
 import React, { useState } from "react"; 
 import axios from "axios";
-import Dictionary from "./src/Dictionary.css";
+import "./Dictionary.css";
 
 
 
