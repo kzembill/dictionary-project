@@ -64,31 +64,24 @@ export default function Dictionary(props) {
           <Results results={results} />
           <Photos photos={photos} />
           <section>
-            <h1>sunset</h1>
-            <div className="Phonetics">
-              <h2>suhn-set</h2>
-            </div>
+            <Phonetics phonetics={phonetics} />
           </section>
           <section>
-            <div className="Meaning">
-              <h3>noun</h3>
-              <p>the time in the evening at which the sun begins to fall below the horizon</p>
-            </div>
+           <Meanings meanings={meanings} />
             <div className="Synonyms">
               <strong>Similar:</strong>
               <ul>
                 <li>
-                  sundown
+                  <Synonyms synonyms={synonyms}/>
                 </li>
               </ul>
             </div>
           </section>
 
           <section>
-            <div className="Meaning">
+            <div className="Meanings">
               <h3>adjective</h3>
-              <p>of a declining indistry or technology</p>
-              <em>sunset industries</em>
+              <Meanings meanings ={mranings} />
             </div>
           </section>
        </div>
