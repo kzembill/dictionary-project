@@ -1,3 +1,9 @@
+body {
+  background-color: aliceblue;
+}
+a {
+  color: aquamarine;
+}
 .App-logo {
   max-width: 400px;
   display: block;
@@ -9,4 +15,8 @@
 .App-footer {
   text-align: center;
   margin: 30px 0;
+}
+.App {
+  max-width: 960px;
+  margin: 0 auto;
 }
