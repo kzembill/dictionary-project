@@ -7,7 +7,7 @@ import "./Dictionary.css";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
-  let [results, setResults] = useState(null);
+  let [result, setResult] = useState(null);
   let [photos, setPhotos] = useState(null);
 
   function handleDictionResponse(response) {
