@@ -12,7 +12,7 @@ export default function Dictionary (props) {
         let [loaded, setLoaded] = useState(false);
         let [photos, setPhotos] = useState(null);
 
-    function handlePexelsResponse(response) {
+    function handleResponse(response) {
         setPhotos(response.data.photos);
     }
 
@@ -22,10 +22,10 @@ export default function Dictionary (props) {
 
     function search() {
         let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-        let apiKey = "a56bd14t7ad00f6eo465f0e67d3dc8fa";
         axios.get(apiUrl).then(handleDictionResponse);
-
-    function handleSubmit(event) {
+        let apiKey = "a56bd14t7ad00f6eo465f0e67d3dc8fa";
+      }
+      function handleSubmit(event){
         event.preventDefault();
         search();
       }
