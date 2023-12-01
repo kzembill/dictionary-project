@@ -24,14 +24,6 @@ export default function Dictionary (props) {
         let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
         let apiKey = "a56bd14t7ad00f6eo465f0e67d3dc8fa";
         axios.get(apiUrl).then(handleDictionResponse);
-      
-        
-    let pexelsApiKey =
-        "563492ad6f91700001000001fdd29f0808df42bd90c33f42e128fa89";
-   let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-   let headers = { Authorization: `${pexelsApiKey}` };
-   axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
-    }
 
     function handleSubmit(event) {
         event.preventDefault();
