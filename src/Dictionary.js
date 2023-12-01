@@ -61,7 +61,8 @@ export default function Dictionary(props) {
             suggested words: sunset, wine, yoga, plant...
           </div>
         </section>
-        <div className="Results">
+          <Results results={results} />
+          <Photos photos={photos} />
           <section>
             <h1>sunset</h1>
             <div className="Phonetics">
@@ -90,10 +91,7 @@ export default function Dictionary(props) {
               <em>sunset industries</em>
             </div>
           </section>
-       
-        </div>
-        <Photos photos={photos} />
-      </div>
+       </div>
     );
   } else {
     load();
