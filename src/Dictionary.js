@@ -61,7 +61,37 @@ export default function Dictionary(props) {
             suggested words: sunset, wine, yoga, plant...
           </div>
         </section>
-        <Results results={results} />
+        <div className="Results">
+          <section>
+            <h1>sunset</h1>
+            <div className="Phonetics">
+              <h2>suhn-set</h2>
+            </div>
+          </section>
+          <section>
+            <div className="Meaning">
+              <h3>noun</h3>
+              <p>the time in the evening at which the sun begins to fall below the horizon</p>
+            </div>
+            <div className="Synonyms">
+              <strong>Similar:</strong>
+              <ul>
+                <li>
+                  sundown
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <div className="Meaning">
+              <h3>adjective</h3>
+              <p>of a declining indistry or technology</p>
+              <em>sunset industries</em>
+            </div>
+          </section>
+       
+        </div>
         <Photos photos={photos} />
       </div>
     );
