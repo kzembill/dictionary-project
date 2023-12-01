@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Result from "./Result";
+import Results from "./Results";
 import Photos from "./Photos";
 import "./Dictionary.css";
 
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
-  let [result, setResult] = useState(null);
+  let [Results, setResults] = useState(null);
   let [photos, setPhotos] = useState(null);
 
   function handleDictionResponse(response) {
-    setResult(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function handlePexelsResponse(response) {
@@ -56,7 +56,7 @@ export default function Dictionary(props) {
               </form>
     
     </section>
-    <Result result={result}/>
+    <Results results={results}/>
     <Photos photos={photos}/>
     </div>
     );
