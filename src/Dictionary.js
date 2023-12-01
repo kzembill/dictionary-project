@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Results from "./Results";
+import Result from "./Result";
 import Photos from "./Photos";
 import "./Dictionary.css";
 
@@ -56,7 +56,7 @@ export default function Dictionary(props) {
               </form>
     
     </section>
-    <Results results={results}/>
+    <Result result={result}/>
     <Photos photos={photos}/>
     </div>
     );
