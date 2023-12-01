@@ -1,5 +1,5 @@
 import React from "react";
-import Phonetics from "./Phonetics";
+import Phonetic from "./Phonetic";
 import Meaning from "./Meaning";
 import "./Results.css";
 
@@ -9,10 +9,10 @@ export default function Results(props) {
       <div className="Results">
         <section>
           <h2>{props.results.word}</h2>
-          {props.results.phonetics.map(function (phonetics, index) {
+          {props.results.phonetic.map(function (phonetic, index) {
             return (
               <div key={index}>
-                <Phonetics phonetics={phonetics} />
+                <Phonetic phonetic={phonetic} />
               </div>
             );
           })}
