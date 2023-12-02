@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba (0, 0, 0, 0.6)), url("./images/background.jpg");
+  background-color: rgb(97, 97, 165);
 }
 a {
   color: dark purple;
