@@ -11,7 +11,7 @@ function App() {
         alt="logo" />
       </header>
       <main>
-        <Dictionary  />
+        <Dictionary  defaultKeyword="sunrise"/>
       </main>
       <footer className="App-footer"> 
         <small>Coded by Kalli Zembillas</small>
