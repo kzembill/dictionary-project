@@ -14,7 +14,7 @@ function App() {
         <Dictionary  defaultKeyword="sunrise"/>
       </main>
       <footer className="App-footer"> 
-        <small>Coded by <a href="https://github.com/kzembill/dictionary-project.git" target="_blank" rel="non-referrer">Kalli Zembillas</a></small>
+        <small>Coded by Kalli Zembillas<a href="https://github.com/kzembill/dictionary-project.git" target="_blank" rel="non-referrer">Open Sourced</a></small>
       </footer>
       </div>
     </div>
